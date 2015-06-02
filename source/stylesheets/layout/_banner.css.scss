@@ -1,0 +1,47 @@
+#banner {
+  background-image: url("../images/photo-by-olesya-nabieva-n-302.jpeg");
+  background-size: cover;
+  height: 750px;
+  padding: 150px 20px;
+}
+
+.scroll-btn {
+  position: absolute;
+  width: 100px;
+  margin-left: -50px;
+  bottom: 60px;
+  left: 50%;
+  text-align: center;
+  font-size: 60px;
+  color: white;
+}
+
+@keyframes fadeslide {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0.0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeslide {
+    0% {
+    -webkit-transform: translateY(-100%);
+    opacity: 0.0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.fade-slidedown {
+  position: absolute;
+  opacity: 0;
+  animation: fadeslide 2s 1s ease forwards;
+  -webkit-animation: fadeslide 2s 1s ease forwards;
+}
